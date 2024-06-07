@@ -1,0 +1,297 @@
+
+html{
+    font-size:100%;
+}
+
+body{
+    background-color: rgb(75, 75, 75);
+    text-align: center;
+    
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 300px;
+    float: left;
+    margin: 1%;
+ }
+h1{
+    text-align:center;
+    background-color: #2a623d;
+    color: white;
+    padding: 20px;
+}
+h2{
+    text-align:center;
+    background-color: #222f5b;
+    color: white;
+    padding: 10px;
+}
+
+
+p{
+    font-size: 150%;
+    color: white;
+    text-align: justify;
+}
+.blanco{
+    color: #ffffff;
+    text-align: justify;
+    font-size: 150%;
+}
+
+.tabla{
+    
+    display: table;
+  }
+  
+.tabla td{
+    padding: 0 25px;
+  }
+
+.tabla2{
+  
+    display: table;
+  }
+h4{
+    font-size: 30px;
+}
+
+/* menu */
+#menu{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color: rgb(109, 109, 109);
+    height: 150px;
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+/* items del menu */
+#menu ul li{
+    background-color: rgb(175, 175, 175);
+   
+}
+/* enlaces del menu */
+#menu ul a{
+    display: block;
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    font-weight: 400;
+    font-size:20px;
+    padding:10px;
+    text-transform:1px;
+    letter-spacing:1px;
+}
+/* items del menu */
+#menu ul li{
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+/* efecto al pasar el raton por los items del menu */
+#menu ul li:hover{
+    background: rgba(84, 85, 87, 0.925);
+}
+/* menu desplegable */
+#menu ul ul{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eeee;
+    padding:0;
+}
+/* items del menu desplegable */
+#menu ul ul li{
+    float:none;
+    width:150px;
+}
+/* enlaces de los items del menu desplegable */
+#menu ul ul a{
+    line-height:120%;
+    padding:10px 15px;
+}
+/* items del menu desplegable al pasar el raton */
+#menu ul li:hover > ul{
+    display:block;
+}
+
+.imagenes{
+    align-items: center;
+}
+.Bienvenidos{
+    text-align: left;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+.in-flex{
+flex:1;
+padding:25px;
+margin: 30px 150px 30px 30px;
+min-width: 250px;
+font-size: 150%;
+text-align: justify;
+color: white;
+
+}
+
+.in-flex:first-child{
+flex:2;
+padding:25px;
+margin: 80px 30px 30px 30px;
+min-width:250px;
+}
+.in-flex div {
+    padding:25px;
+    margin:20px;
+}
+
+.home2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.in-flex2{
+flex:1;
+padding:5px;
+margin: 50px 0px 0px 0px;
+min-width:50px;
+font-size: 150%;
+text-align: justify;
+color: white;
+}
+.in-flex22{
+    flex:1;
+    padding:5px;
+    margin: 15px 10px 10px 10px;
+    min-width:50px;
+    font-size: 150%;
+    text-align: justify;
+    color: white;
+    }
+.in-flex2:first-child{
+flex:2;
+padding:90px;
+margin: 10px 50px 100px 30px;
+min-width:100px;
+background-color: none;
+}
+.in-flex2 div {
+    padding:100px;
+    margin:100px;
+    background-color: none;
+}
+
+.home3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.in-flex3{
+flex:1;
+padding:20px;
+margin: 30px 150px 30px 30px;
+min-width:250px;
+font-size: 150%;
+text-align: justify;
+color: white;
+}
+
+.in-flex3:first-child{
+flex:2;
+padding:25px;
+margin: 110px 30px 30px 30px;
+min-width:250px;
+background-color: none;
+}
+.in-flex3 div {
+    padding:5px;
+    margin:5px;
+    background-color: none;
+}
+
+.home4{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.grafica{
+    max-width: 800px;
+    min-width: 600px;
+    margin:50px;
+}
+.grafica2{
+    max-width: 800px;
+    min-width: 600px;
+    margin:50px;
+}
+
+.imgResp {
+    width: 50vw;
+    max-width: 800px;
+    min-width: 600px;
+    margin:auto
+}
+
+img {
+    width: 50%;
+}
+
+
+
+
+/* dispositivos moviles  para que no se mueva cuando esta en celular */
+@media (max-width: 100px){
+    body {
+        overflow:hidden;
+    }
+    .logo {
+        padding-left: 20px;
+        }
+
+    .ham:hover{
+        transform: rotate(360deg);
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 0px;
+    }
+    #menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        display:none;
+        opacity: 0;
+    }
+    #menu li{
+        width:100%;
+        text-align: center;
+        padding: 20px;
+
+    }
+    
+}
+
+.texto {
+    margin: 15px 30px 15px 30px;
+}
+
